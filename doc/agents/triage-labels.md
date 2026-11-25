@@ -29,9 +29,9 @@ capacity (`ready-for-human`, where the call is already made). The one-state
 rule still holds, so applying `needs-decision` means removing `needs-triage`
 from that issue rather than carrying both.
 
-## Divergence from other `ycpss91255-docker` repos
+## Divergence from other `ycpss91255-lab` repos
 
-The sibling repo `ycpss91255-docker/base` has since adopted this vocabulary.
+The sibling repo `ycpss91255-lab/base` has since adopted this vocabulary.
 All twelve of this repo's label strings exist in `base` under the same name
 and the same colour, and seven are identical in description as well:
 `needs-triage`, `needs-info`, `ready-for-human`, `needs-decision`, `wontfix`,
@@ -64,15 +64,15 @@ which Dependabot creates rather than a maintainer: this repo and `base` carry
 both with identical name, colour and description.
 
 `base` carries `needs-decision` too, so the sixth state role is local to this
-repo only against `ycpss91255-research/vendor_kit` — the next section — and
+repo only against `ycpss91255-lab/vendor_kit` — the next section — and
 not against `base`.
 
 `question` does not exist in this repo at all: `needs-info` covers it, and two
 labels for one state only invites drift.
 
 ```
-$ gh label list -R ycpss91255-docker/agent_harness --json name,color,description
-$ gh label list -R ycpss91255-docker/base --json name,color,description
+$ gh label list -R ycpss91255-lab/agent_harness --json name,color,description
+$ gh label list -R ycpss91255-lab/base --json name,color,description
 ```
 
 Verified 2026-10-09. The 2026-09-08 revision of this section described `base`
@@ -80,9 +80,9 @@ as not having adopted the vocabulary at all, as carrying GitHub's full stock
 defaults, and as having `wontfix` for its only identical label; `base`'s
 labels have changed since and none of that holds.
 
-## `needs-decision` is absent from `ycpss91255-research/vendor_kit`
+## `needs-decision` is absent from `ycpss91255-lab/vendor_kit`
 
-`ycpss91255-research/vendor_kit`, the reference implementation of this
+`ycpss91255-lab/vendor_kit`, the reference implementation of this
 vocabulary, carries the five canonical roles and does **not** carry
 `needs-decision`. Do not assume an issue there can express "blocked on a
 decision"; in that repo such an issue sits under `needs-triage` or carries no
@@ -99,7 +99,7 @@ Because the two vocabularies agree on every role they share, the missing sixth
 is a real gap there and not a sign that the vocabulary went unadopted.
 
 ```
-$ gh label list -R ycpss91255-research/vendor_kit --limit 100 --json name,color,description
+$ gh label list -R ycpss91255-lab/vendor_kit --limit 100 --json name,color,description
 ```
 
 Verified 2026-10-30: 14 labels, the five canonical roles among them and no

@@ -9,7 +9,7 @@
 # nothing would report it -- the agents just silently stop seeing them.
 set -euo pipefail
 
-REMOTE="https://github.com/ycpss91255-docker/agent_harness.git"
+REMOTE="https://github.com/ycpss91255-lab/agent_harness.git"
 REF="${1:-main}"
 
 SCRIPT_DIR="$(cd -- "$(dirname -- "${BASH_SOURCE[0]}")" && pwd -P)"

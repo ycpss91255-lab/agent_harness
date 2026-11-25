@@ -50,7 +50,7 @@ supports project-level slash commands.
 
 ### Issue tracker
 
-Issues live in this repo's GitHub Issues (`ycpss91255-docker/agent_harness`),
+Issues live in this repo's GitHub Issues (`ycpss91255-lab/agent_harness`),
 driven by the `gh` CLI. See `doc/agents/issue-tracker.md`.
 
 ### Commits
@@ -81,7 +81,7 @@ See `doc/agents/domain.md`.
 
 ### The `docker_harness` script survey
 
-`ycpss91255-docker/docker_harness` is retired. Issue #23 records what its 51
+`ycpss91255-lab/docker_harness` is retired. Issue #23 records what its 51
 scripts were, which are worth carrying here and what binds each survivor to
 the dead repo. Read it before proposing something that repo already had; a
 script absent from this repo may be absent by decision.

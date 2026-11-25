@@ -8,7 +8,7 @@
 #
 # Bootstrap in a consumer repo:
 #   git subtree add --prefix=.agent_harness \
-#       https://github.com/ycpss91255-docker/agent_harness.git main --squash
+#       https://github.com/ycpss91255-lab/agent_harness.git main --squash
 #   ./.agent_harness/init.sh
 #
 # Re-running is safe and is how drift is repaired: every link is recreated,
